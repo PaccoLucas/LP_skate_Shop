@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1024px;
+    width:100%;
+    margin: 0 auto ;
+    display: flex;
+}
+
+.about {
+    display: flex;
+}
+
+header, h1 {
+    font-family: 'Rubik Iso', cursive;
+    font-weight: normal; 
+    color: orange;
+}
+
+header .container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+header {
+    padding:16px 0;
+    background-color: #000 ;
+    width: 100%;
+    margin-bottom: 56px;
+}
+
+header nav li {
+    display: inline;
+    margin: 16px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: orange;
+    text-decoration: none;
+}
+
+.brands-list img {
+    height: 36px;
+}
+
+.brands-list li {
+    display: inline;
+    margin-right: 8px;
+}
+
+ul.brands-list {
+    text-align: center;
+}
+
+section  p {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.store-front {
+    margin-right: 16px;
+}
+
+h2 {
+    margin-bottom: 36px;
+    color: orange;
+    border-bottom: 3px solid orange;
+}
+
+.about {
+    margin-bottom: 56px;
+}
+
+.produtos {
+    width: 100%;
+}
+
+.lista-produtos {
+    display: block;
+}
+
+.lista-produtos li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 24px;
+    margin-bottom: 18px;
+    margin: 0 px 100px;
+    align-items: center;
+}
+
+.lista-produtos li img {
+    max-width: 100%;
+    height: 240px
+}
+
+.lista-produtos li h3 {
+    margin: 16px 8px 0;
+}
+
+.lista-produtos li p {
+    font-size: 0.9em;
+    font-weight: bold;
+    padding: 8px;
+}
+
+button {
+    width: 70%;
+    padding: 8px 0;
+    border: none;
+    background-color: orange;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.price {
+    margin: 16px 0;
+    display: block;
+}
+
+.price del {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1%;
+    row-gap: 5%;
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 1023px;
+        width:100%;
+    }
+
+    .about {
+        display: block;
+        margin: 0 74px;
+        margin-bottom: 36px;
+    }
+
+    .produtos {
+        width: 100%;
+        margin: 0% 74px;
+    }
+
+    .store-front {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .lista-produtos {
+        max-width: 1023px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 49.5%);
+        column-gap: 1%;
+        row-gap: 0;
+        margin-bottom: 36px;
+    }
+
+    h1 {
+        margin: 0 74px;
+        text-align: center;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0 74px;
+    }
+
+
+    .lista-produtos li {
+        margin-top: 0;
+        margin-bottom: 36px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .container {
+        max-width: 640px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    header {
+        margin-bottom: 36px;
+    }
+
+    .about {
+        max-width: 640px;
+        width: 100%;
+        display: block;
+        margin: 0 18px;
+        margin-bottom: 36px;
+    }
+
+    .produtos {
+        width: 100%;
+        margin: 0% 18px;
+
+    }
+
+    .store-front {
+        width: 100%;
+    }
+
+    h1 {
+        margin: 0 18px;
+        text-align: center;
+    }
+
+    ul {
+        text-align: center;
+        margin: 0 18px;
+    }
+
+    body, html {
+        overflow-x: hidden;
+    }
+
+    .lista-produtos {
+        max-width: 1023px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        row-gap: 0%;
+    }
+    .lista-produtos li {
+        margin-bottom: 10px;
+    }
+}
