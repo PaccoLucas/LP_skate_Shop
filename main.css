@@ -21,6 +21,11 @@ header, h1 {
     color: orange;
 }
 
+h2{
+    font-family: 'Shantell Sans', cursive;
+    font-weight: normal;
+}
+
 header .container {
     align-items: center;
     justify-content: space-between;
@@ -59,11 +64,16 @@ ul.brands-list {
 
 section  p {
     font-size: 1.3em;
-    margin-bottom: 10px;
+}
+
+.texto-sobre {
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 24px;
 }
 
 .store-front {
-    margin-right: 16px;
+    margin-right: 36px;
 }
 
 h2 {
@@ -203,13 +213,17 @@ button {
         max-width: 640px;
         width: 100%;
         display: block;
-        margin: 0 18px;
+        margin: 0 36px;
         margin-bottom: 36px;
+    }
+
+    section p {
+        font-size: 1.1em;
     }
 
     .produtos {
         width: 100%;
-        margin: 0% 18px;
+        margin: 0% 36px;
 
     }
 
@@ -218,13 +232,15 @@ button {
     }
 
     h1 {
-        margin: 0 18px;
+        margin: 0 36px;
         text-align: center;
+        font-size: 1.5em;
     }
 
     ul {
         text-align: center;
-        margin: 0 18px;
+        margin: 0 36px;
+        font-size: 1.5em;
     }
 
     body, html {
